@@ -1,0 +1,574 @@
+/* ==========================================
+   1. GLOBAL STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 123, 123);
+    color: rgb(66, 1, 1);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   2. NAVBAR & HEADER
+   ========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(234, 139, 139, 0.949);
+}
+
+.logo {
+    color: rgb(54, 8, 8);
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: rgb(63, 36, 36);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: rgb(47, 11, 11);
+    text-decoration: underline;
+}
+
+/* ==========================================
+   3. HERO & HOME SECTION (index.html)
+   ========================================== */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #6e101a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px 0;
+    color: #230509;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ef172d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #2b0409;
+}
+
+.about-section,
+.cards-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    padding: 30px;
+    border: 1px solid #ead6d6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #24080b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+/* ==========================================
+   4. MAKEUP PAGE STYLES (makeup.html)
+   ========================================== */
+.page-title {
+    background-color: #641F2B;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    color: #F4D6D8;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.page-title p {
+    color: white;
+    font-size: 18px;
+}
+
+.content {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    background-color: #FFF5F5;
+    border: 2px solid #F4D6D8;
+    border-radius: 20px;
+}
+
+.content h2 {
+    color: #641F2B;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B23A48;
+    padding-bottom: 8px;
+}
+
+.content ol,
+.content ul {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.content li {
+    color: #641F2B;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.content li::marker {
+    color: #B23A48;
+    font-weight: bold;
+}
+
+.content img {
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin: 35px auto;
+    border-radius: 20px;
+    border: 5px solid #F4D6D8;
+}
+
+.highlight {
+    background-color: #F4D6D8;
+    border-left: 7px solid #B23A48;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.highlight h3 {
+    color: #641F2B;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    color: #641F2B;
+}
+
+/* ==========================================
+   5. TEAM PAGE STYLES (team.html)
+   ========================================== */
+.team-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.team-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card p {
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background-color: #B23A48;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.25s ease;
+}
+
+.btn-card:hover {
+    background-color: #641F2B;
+}
+
+/* ---- Studio gallery (Task 4: CSS Grid) ---- */
+.gallery-title {
+    text-align: center;
+    color: #641F2B;
+    font-size: 26px;
+    margin: 50px 0 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-caption {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(48, 6, 10, 0.85), rgba(48, 6, 10, 0));
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #B23A48;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    color: #24080b;
+    margin-bottom: 5px;
+}
+
+.role {
+    display: inline-block;
+    color: #B23A48;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #444444;
+}
+
+.highlight {
+    background-color: #F4D6D8;
+    border-left: 8px solid #B23A48;
+    padding: 25px 30px;
+    margin-top: 30px;
+    border-radius: 16px;
+}
+
+.highlight h3 {
+    color: #641F2B;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    color: #641F2B;
+    font-size: 16px;
+}
+
+/* ==========================================
+   6. CONTACT PAGE STYLES (contact.html)
+   Task 3: CSS Grid page layout
+   (page-title = header, contact-info = sidebar,
+    contact-main = main content, contact-note = footer)
+   ========================================== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-areas:
+        "title   title"
+        "sidebar main"
+        "note    note";
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.contact-grid .page-title {
+    grid-area: title;
+    margin-bottom: 0;
+}
+
+.contact-info {
+    grid-area: sidebar;
+}
+
+.contact-main {
+    grid-area: main;
+}
+
+.contact-note {
+    grid-area: note;
+    background-color: #F4D6D8;
+    border-radius: 16px;
+    padding: 20px 30px;
+    text-align: center;
+    color: #641F2B;
+    font-weight: bold;
+}
+
+.contact-info,
+#contact-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h3, 
+#contact-form h3 {
+    color: #641F2B;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F4D6D8;
+    padding-bottom: 8px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #24080b;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ead6d6;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #B23A48;
+    background-color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #ef172d;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2b0409;
+}
+
+/* ==========================================
+   6b. PRODUCTS PAGE — TABLE (products.html)
+   ========================================== */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0 40px;
+    background-color: white;
+}
+
+.products-table th {
+    background-color: #641F2B;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.products-table td {
+    padding: 15px;
+    border: 1px solid #F4D6D8;
+    color: #641F2B;
+    font-size: 16px;
+}
+
+.products-table tr:nth-child(even) {
+    background-color: #FFF5F5;
+}
+
+.products-table tr:hover {
+    background-color: #F4D6D8;
+}
+
+.products-table td:first-child {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.products-table td:nth-child(2) {
+    width: 25%;
+}
+
+/* ==========================================
+   7. FOOTER
+   ========================================== */
+footer {
+    background-color: #3d2528;
+    color: rgb(234, 231, 231);
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "sidebar"
+            "main"
+            "note";
+    }
+}

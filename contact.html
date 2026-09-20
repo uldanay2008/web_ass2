@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Winx Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">WINX STUDIO</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contact-grid">
+                <section class="page-title">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with us for consultations and bookings.</p>
+                </section>
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><strong>Address:</strong> Winx Studio, Astana, Kazakhstan</p>
+                    <p><strong>Email:</strong> info@winxstudio.com</p>
+                    <p><strong>Phone:</strong> +7 (700) 123-45-67</p>
+                    <p><strong>Working Hours:</strong> Mon - Sat: 10:00 - 20:00</p>
+                </div>
+
+                <div class="contact-main">
+                    <form id="contact-form">
+                        <h3>Send a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service">
+                                <option value="makeup">Makeup Consultation</option>
+                                <option value="products">Product Recommendation</option>
+                                <option value="other">Other Query</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-note">
+                    Follow us on Instagram @winxstudio for daily beauty tips and behind-the-scenes looks.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Winx Studio</p>
+        <p>Team members: Asylzhan, Uldanay</p>
+    </footer>
+</body>
+</html>
