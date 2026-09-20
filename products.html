@@ -3,112 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Created by Assylzhan -->
     <title>Beauty Products - Winx Studio</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="assignment-page">
+    <header class="site-header">
 
-    <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">WINX STUDIO</a>
-
+            <a href="index.html" class="logo">
+                WINX STUDIO
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="makeup.html">Makeup</a></li>
+
                 <li><a href="products.html">Products</a></li>
+
                 <li><a href="tips.html">Tips</a></li>
+
                 <li><a href="team.html">Team</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <aside class="sidebar">
 
-    <main>
-        <div class="container">
+        <h2>Products</h2>
+        <p>
+            On this page you can learn about basic makeup products.
+        </p>
 
-            <section class="page-title">
-                <h1>Beauty Products</h1>
-                <p>Learn about essential makeup products and how to choose them.</p>
-            </section>
+        <ul>
+            <li>Foundation</li>
+            <li>Blush</li>
+            <li>Mascara</li>
+            <li>Lipstick</li>
+        </ul>
 
-            <section class="content">
+    </aside>
+    <main class="main-content">
+        <section class="page-title">
 
-                <h2>Essential Makeup Products</h2>
-
-                <table class="products-table">
-                    <tr>
-                        <th>№</th>
-                        <th>Product</th>
-                        <th>Description</th>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td><strong>Foundation</strong></td>
-                        <td>Helps create an even skin tone.</td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td><strong>Concealer</strong></td>
-                        <td>Covers dark circles and small imperfections.</td>
-                    </tr>
-
-                    <tr>
-                        <td>3</td>
-                        <td><strong>Blush</strong></td>
-                        <td>Adds freshness and color to the face.</td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td><strong>Mascara</strong></td>
-                        <td>Makes eyelashes look longer and more defined.</td>
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <td><strong>Lipstick</strong></td>
-                        <td>Completes the makeup look with color.</td>
-                    </tr>
-                </table>
-
-
-                <h2>How to Choose Products</h2>
-
-                <ul>
-                    <li>Choose a foundation that matches your skin tone.</li>
-                    <li>Select products that are suitable for your skin type.</li>
-                    <li>Check the texture and finish before buying a product.</li>
-                    <li>Use softer colors for everyday makeup and brighter colors for special looks.</li>
-                    <li>Keep your makeup products clean and replace old products regularly.</li>
-                </ul>
-
-
-                <img
-                    src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=80"
-                    alt="Different makeup and beauty products"
-                >
-
-
-                <div class="highlight">
-                    <h3>Product Tip</h3>
+            <h1>Beauty Products</h1>
+            <p>
+                Discover useful makeup products
+                for your everyday beauty routine.
+            </p>
+        </section>
+        <section class="products-section">
+            <h2>Popular Products</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Foundation makeup product"
+                    >
+                    <h3>Foundation</h3>
                     <p>
-                        You do not need many products to create a beautiful look.
-                        Start with a few basic items that work good for your skin,
-                        then add more products as you learn what suits your style.
+                        Foundation helps create
+                        an even skin tone and smooth base.
                     </p>
+                    <a href="#product-tips" class="card-button">Learn More</a>
+
                 </div>
+                <div class="product-card">
 
-            </section>
-        </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1625093525885-282384697917?q=80&w=1701&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Blush makeup product"
+                    >
+
+                    <h3>Blush</h3>
+                    <p>
+                        Blush adds color and freshness to the cheeks.
+                    </p>
+
+                    <a href="#product-tips" class="card-button">Learn More</a>
+                </div>
+                <div class="product-card">
+
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1677526496932-1b4bddeee554?q=80&w=968&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Lipstick makeup product"
+                    >
+                    <h3>Lipstick</h3>
+                    <p>
+                        Lipstick completes the makeup look
+                        and adds color to the lips.
+                    </p>
+                    <a href="#product-tips" class="card-button">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="product-tips">
+            <h2>How to Choose Makeup Products</h2>
+            <ol>
+                <li> Choose foundation that matches your skin tone.</li>
+                <li>Select products suitable for your skin type.</li>
+                <li> Check the texture before buying a product.</li>
+                <li>Choose colors that match your makeup style.</li>
+            </ol>
+            <div class="highlight">
+                <h3>Product Tip</h3>
+                <p>
+                    <ul>
+                    <li>Foundation creates a smooth and even base.</li>
+                   <li>Blush adds fresh color to the cheeks</li> 
+                    <li>Lipstick completes the look with the perfect finishing touch.</li>
+                    </ul>
+                    You do not need many products to create a beautiful makeup look. Start with basic products first.
+                </p>
+
+            </div>
+        </section>
     </main>
-
-    <footer>
+    <footer class="site-footer">
         <p>Winx Studio</p>
-        <p>Team members: Asylzhan, Uldanay</p>
+        <p>
+            Team members:
+            Assylzhan, Uldanay
+        </p>
     </footer>
-
 </body>
 </html>
